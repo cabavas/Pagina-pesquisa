@@ -1,0 +1,78 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: rgba(250, 235, 215, 0.904);
+}
+main {
+  display: block;
+  align-self: center;
+  text-align: center;
+  border: 2px solid;
+  box-shadow: 2px;
+  width: 60%;
+  margin: auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0, 0.7);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#name {
+  margin-bottom: 2%;
+  width: 100%;
+}
+#email {
+  margin-bottom: 2%;
+  width: 100%;
+}
+#number {
+  margin-bottom: 2%;
+  width: 100%;
+}
+#dropdown {
+  margin-bottom: 2%;
+  width: 100%;
+}
+#survey-form {
+  margin-bottom: 2%;
+  margin-top: 15px;
+  width: 100%;
+}
+.form-control {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+input[name="suggestion"] {
+  height: 5em;
+  width: 100%;
+  margin-bottom: 2%;
+}
+span {
+  font-size: 0.65em;
+}
+input[type="submit"] {
+  width: 102%;
+}
+#submit:hover {
+  background-color: rgb(58, 58, 158);
+  color: rgb(250, 235, 215);
+}

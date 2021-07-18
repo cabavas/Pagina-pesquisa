@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+  <body>
+    <h1 class="h1class" id="title">Pesquisa de filmes</h1>
+    <p class="pclass" id="description">
+      Gostaria de saber um pouco mais sobre seu gosto sobre filmes
+    </p>
+    <main>
+      <form id="survey-form">
+        <div class="form-control">
+          <label id="name-label"><strong>Nome</strong></label
+          ><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome"
+            required
+          /><br />
+          <label id="email-label"><strong>Email</strong></label
+          ><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="digite seu email"
+            required
+          /><br />
+          <label id="number-label"
+            ><strong>Idade <span>(opcional)</span></strong></label
+          ><br />
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Idade"
+            min="0"
+            max="120"
+          />
+        </div>
+        <div class="form-control">
+          <label id="role">
+            <strong>Qual seu gênero de filmes favorito?</strong><br />
+          </label>
+          <select id="dropdown" name="Select current situation" required>
+            <option value="" disabled selected>Selecione seu gênero</option>
+            <option value="option1">Romance</option>
+            <option value="option2">Comédia</option>
+            <option value="option3">Terror</option>
+            <option value="option4">Ficção</option>
+            <option value="option5">Drama</option>
+            <option value="option6">Suspense</option>
+            <option value="option7">Documentário</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <strong>Quantos filmes você costuma assistir por semana?</strong
+          ><br />
+          <input type="radio" id="1" name="movies" value="1" checked />
+          <label for="1">1</label><br />
+          <input type="radio" id="2" name="movies" value="2" />
+          <label for="2">2</label><br />
+          <input type="radio" id="3" name="movies" value="3" />
+          <label for="3">3</label><br />
+          <input type="radio" id="4" name="movies" value="4" />
+          <label for="4">4+</label><br />
+        </div>
+        <div class="form-control">
+          <label id="role">
+            <strong>Qual seu filme preferido do senhor dos aneis?</strong><br />
+          </label>
+          <select id="dropdown" name="lotr" required>
+            <option value="" disabled selected>Selecione uma opçao</option>
+            <option value="option1">A sociedade do anel</option>
+            <option value="option2">As duas torres</option>
+            <option value="option3">O retorno do rei</option>
+            <option value="option4">
+              Nunca assisti nenhum e estou vivendo errado
+            </option>
+          </select>
+        </div>
+        <div class="form-control">
+          <strong
+            >Selecione os generos que voce gosta.
+            <span>(Marque quantos quiser)</span></strong
+          ><br />
+          <input
+            type="checkbox"
+            id="option1"
+            name="option1"
+            value="Front-end Projects"
+          />
+          <label for="option1">Romance</label><br />
+          <input
+            type="checkbox"
+            id="option2"
+            name="option2"
+            value="Back-end Projects"
+          />
+          <label for="option2">Comedia</label><br />
+          <input
+            type="checkbox"
+            id="option3"
+            name="option3"
+            value="Data Visualization"
+          />
+          <label for="option3">Terror</label><br />
+          <input
+            type="checkbox"
+            id="option4"
+            name="option4"
+            value="Challenges"
+          />
+          <label for="option4">Drama</label><br />
+          <input
+            type="checkbox"
+            id="option5"
+            name="option5"
+            value="Open Source Community"
+          />
+          <label for="option5">Suspense</label><br />
+          <input
+            type="checkbox"
+            id="option6"
+            name="option6"
+            value="Gitter help rooms"
+          />
+          <label for="option6">Ficçao cinetifica</label><br />
+          <input type="checkbox" id="option7" name="option7" value="Videos" />
+          <label for="option7">Documentario</label><br />
+          <input
+            type="checkbox"
+            id="option8"
+            name="option8"
+            value="City Meetups"
+          />
+          <label for="option8">Fantasia</label><br />
+          <input type="checkbox" id="option9" name="option9" value="Wiki" />
+          <label for="option9">Cowboy</label><br />
+          <input type="checkbox" id="option10" name="option10" value="Forum" />
+          <label for="option10">Cult</label><br />
+          <input
+            type="checkbox"
+            id="option11"
+            name="option11"
+            value="Additional Courses"
+          />
+          <label for="option11">Super heroi</label><br />
+        </div>
+        <div class="form-control">
+          <strong>Diga qual seu filme favorito e explique por que.</strong
+          ><br />
+          <textarea
+            placeholder="Comente aqui..."
+            id="advanced"
+            name="advanced"
+            rows="3"
+            cols="50"
+            maxlength="300"
+          >
+          </textarea>
+        </div>
+        <div class="form-control">
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
